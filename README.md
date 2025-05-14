@@ -1,1 +1,0 @@
-# RobertSynoczek.github.io

@@ -1,0 +1,50 @@
+select_origin: directory
+files_origin: ./posts
+nodes_origin: ""
+links_origin: ""
+nodes_online: ""
+links_online: ""
+images_origin: ""
+export_target: ./
+history: false
+focus_max: 2
+record_types:
+  undefined:
+    fill: "#948979"
+    stroke: "#DFD0B8"
+link_types:
+  undefined:
+    stroke: simple
+    color: "#DFD0B8"
+references_as_nodes: false
+references_type_label: references
+record_filters: []
+graph_background_color: "#222831"
+graph_highlight_color: "#393E46"
+graph_highlight_on_hover: true
+graph_text_size: 10
+graph_arrows: true
+node_size_method: degree
+node_size: 10
+node_size_max: 20
+node_size_min: 2
+attraction_force: 100
+attraction_distance_max: 250
+attraction_vertical: 0
+attraction_horizontal: 0
+views: {}
+record_metas: []
+generate_id: always
+link_context: tooltip
+hide_id_from_record_header: false
+title: ""
+author: ""
+description: ""
+keywords: []
+link_symbol: ""
+csl: ""
+bibliography: ""
+csl_locale: ""
+css_custom: ""
+devtools: false
+lang: en
