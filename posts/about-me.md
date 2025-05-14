@@ -13,8 +13,7 @@ I am a 26 year old Developer turned Product Owner at Nokia Krakow, hobbyist lect
 
 Beaing a teacher at heart, I am very fond of the idea of [open and free knowledge](https://okfn.org/en/) and knowledge sharing in general. **Thus, this site!**
 
-The setup is quite unconventional. Based on [Paul Olets](https://pl.wikipedia.org/wiki/Paul_Otlet) Mundaneum, a “machine to think the world”, as consisting of two parts: a “cosmograph” and a “cosmoscope”, respectively allowing knowledge to be recorded and consulted.
-This site was generated using the [Cosma tool](https://cosma.arthurperret.fr/) as it was currently the mos enjoyable option. 
+The setup is quite unconventional. Based on [Paul Olets](https://pl.wikipedia.org/wiki/Paul_Otlet) Mundaneum, a “machine to think the world”, as consisting of two parts: a “cosmograph” and a “cosmoscope”, respectively allowing knowledge to be recorded and consulted. This site was generated using the [Cosma tool](https://cosma.arthurperret.fr/) as it was currently the mos enjoyable option. 
 
 This repository will contain anything, from classical mathematics, physics, probably a lot of technology includin ML, ML in hardware and even stuff I find about 5G.
 
