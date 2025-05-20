@@ -1,5 +1,5 @@
 ---
-title: Telecommunications
+title: Physics
 id: "20250515004333"
 types:
   - undefined
