@@ -2,7 +2,7 @@
 title: Physics
 id: "20250515004333"
 types:
-  - undefined
+  - top_category
 ---
 
 # List of topics:

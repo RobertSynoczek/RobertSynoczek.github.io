@@ -2,7 +2,7 @@
 title: Management
 id: "20250515004330"
 types:
-  - undefined
+  - top_category
 ---
 
 # List of topics:

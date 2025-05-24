@@ -12,6 +12,9 @@ record_types:
   undefined:
     fill: "#948979"
     stroke: "#DFD0B8"
+  top_category:
+    fill: "#b41ec7"
+    stroke: "#d369e0"
 link_types:
   undefined:
     stroke: simple
