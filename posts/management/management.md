@@ -10,7 +10,7 @@ Yep, I'm doing a postgraduate degree in IT Project Management, so some knowlede 
 
 List:
 
-- [[20250524115617|Pareto Principle (80/20 rule)]]
-- [[20250524115809|Ishikawa Diagrams]]
+- [[20250525143955|Principles]]
+- [[20250525140052|Diagrams]]
 
 [[20250515000329|Back to Home]]
