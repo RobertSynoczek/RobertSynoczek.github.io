@@ -2,10 +2,10 @@
 title: Physics
 id: "20250515004333"
 types:
-  - top_category
+  - top_list
 ---
 
 # List of topics:
-Same problem as in [[20250515004332|Mathematics]].
+There may be something here some day.
 
 [[20250515000329|Back to Home]]

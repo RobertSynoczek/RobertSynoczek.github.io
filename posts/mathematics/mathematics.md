@@ -2,7 +2,7 @@
 title: Mathematics
 id: "20250515004332"
 types:
-  - top_category
+  - top_list
 ---
 
 # List of topics:

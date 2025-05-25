@@ -13,7 +13,7 @@
     
     <meta name="keywords" content="">
     
-    <meta name="date" content="2025-05-24">
+    <meta name="date" content="2025-05-25">
     <title>Cosma — </title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAIGaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA2LjAuMCI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgICAgICAgICB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWERpbWVuc2lvbj4xMDI0PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjEwMjQ8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KokyVsAAAAAlwSFlzAAALEwAACxMBAJqcGAAAATtQTFRFR3BMDVJzDFx+GHSUAP//DVByCVd3AAAAAAD/AIKBCXKSBFJ0F1x/GFZ2EGCANmF8D2+QGHaXFG6NAFh8EnaXG3aWLHCOE2iIH3mZAEx4AFV6AG2QAXOUOn+dprG8AHGSGmuLGWmJfZqtUoahprrGD1V4CVV4FHeWFnWWLmeIAFp8FWaGAFh7LmeGF2OGUHWNfZapAF+HUHSNfZaoAF6H/////Pz87O7x4uLio6Oj3t7eFWaJE16DGGCEIWuOAFqAGoCiADxyAFyHRG+MHoGjAGeQE3GUEG6S1tvhAH2iRX+cAG2Y5OjrAGWMiqCxoa+7iqGyobXBB2KGCF6DCGGFCl2DE4CiEX2gGXqdEX2fFX+iJHmcGXqcInmbAEx3aIWa193jAE12Z4Sa5ensZ5CmaZCn1t3j5Ons3t7fp3RRZgAAADV0Uk5TAHRwQQFHRAEBAkJ4+3h0eHBudPpy+3V1cvv7+vpy+/v7+/v7+52dmZl1+nX6dXX7+/v7+/siYXfnAAAA2ElEQVQYGQXBy07CUBRA0X1OD9zCQAloS4Nj40ii/gG/7UdoSYwxjowCgo9EQxrpfdS1wA0AAGDgEHcgO8qshw/xN+IscnG9tp6SfCjqp2hheHXrMhO6EB8Wr43Rz/qX2fSe+TbW0m8MlepMdvBVxCJTDHv/vkNulqs3fnaGIpJmqnWnOksiKKVIAoAkcoLR+fEGMWK3OfYJ5SWsJ2XlfVVOtmGFso+tP53AaOzbuMewqt4+Tj9pP0aH0lrJ/87nG1Elpa5cPufiDvTCUJWUGvM4cDkAAOSOf+M3WO+ZgJOzAAAAAElFTkSuQmCC" />
@@ -23,7 +23,17 @@
             
             --n_undefined: #DFD0B8;
             
-            --n_top_category: #d369e0;
+            --n_top_list: #d369e0;
+            
+            --n_sub_list: #1718c8;
+            
+            --n_center_article: #777777;
+            
+            --n_open_topic: #ea0608;
+            
+            --n_work_in_progress: #f3f630;
+            
+            --n_closed_topic: #13db17;
             
             
             --l_undefined: #DFD0B8;
@@ -67,15 +77,27 @@
             <form id="types-form" class="menu-types-container">
                 
                 <label class="filter">
-                    <input type="checkbox" name="top_category">
-                    <span class="label" style="color: var(--n_top_category);">top_category</span>
+                    <input type="checkbox" name="center_article">
+                    <span class="label" style="color: var(--n_center_article);">center_article</span>
+                    <span class="badge">1</span>
+                </label>
+                
+                <label class="filter">
+                    <input type="checkbox" name="top_list">
+                    <span class="label" style="color: var(--n_top_list);">top_list</span>
                     <span class="badge">6</span>
                 </label>
                 
                 <label class="filter">
-                    <input type="checkbox" name="undefined">
-                    <span class="label" style="color: var(--n_undefined);">undefined</span>
-                    <span class="badge">2</span>
+                    <input type="checkbox" name="open_topic">
+                    <span class="label" style="color: var(--n_open_topic);">open_topic</span>
+                    <span class="badge">3</span>
+                </label>
+                
+                <label class="filter">
+                    <input type="checkbox" name="sub_list">
+                    <span class="label" style="color: var(--n_sub_list);">sub_list</span>
+                    <span class="badge">1</span>
                 </label>
                 
             </form>
@@ -86,7 +108,7 @@
         <details class="menu-index" id="index">
             <summary class="menu-title">
                 Index
-                <span id="index-counter" class="badge">8</span>
+                <span id="index-counter" class="badge">11</span>
             </summary>
 
             <select class="sorting-select" name="index_sorting">
@@ -102,84 +124,117 @@
                     <a href="#20250515000329">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_undefined);">⬤</span>
+                            <span style="color: var(--n_center_article);">⬤</span>
                             
                         </span>
                         <span>About Me</span>
                     </a>
                 </li>
                 
-                <li data-index="20250515004331" style="order: 2">
+                <li data-index="20250525133847" style="order: 2">
+                    <a href="#20250525133847">
+                        <span class="record-type-points">
+                            
+                            <span style="color: var(--n_sub_list);">⬤</span>
+                            
+                        </span>
+                        <span>DevOps</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250524115809" style="order: 3">
+                    <a href="#20250524115809">
+                        <span class="record-type-points">
+                            
+                            <span style="color: var(--n_open_topic);">⬤</span>
+                            
+                        </span>
+                        <span>Ishikawa Diagrams</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250515004334" style="order: 4">
+                    <a href="#20250515004334">
+                        <span class="record-type-points">
+                            
+                            <span style="color: var(--n_top_list);">⬤</span>
+                            
+                        </span>
+                        <span>IT</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250515004331" style="order: 5">
                     <a href="#20250515004331">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_top_category);">⬤</span>
+                            <span style="color: var(--n_top_list);">⬤</span>
                             
                         </span>
                         <span>Machine Learning</span>
                     </a>
                 </li>
                 
-                <li data-index="20250515004330" style="order: 3">
+                <li data-index="20250515004330" style="order: 6">
                     <a href="#20250515004330">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_top_category);">⬤</span>
+                            <span style="color: var(--n_top_list);">⬤</span>
                             
                         </span>
                         <span>Management</span>
                     </a>
                 </li>
                 
-                <li data-index="20250515004332" style="order: 4">
+                <li data-index="20250515004332" style="order: 7">
                     <a href="#20250515004332">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_top_category);">⬤</span>
+                            <span style="color: var(--n_top_list);">⬤</span>
                             
                         </span>
                         <span>Mathematics</span>
                     </a>
                 </li>
                 
-                <li data-index="20250520231113" style="order: 5">
+                <li data-index="20250520231113" style="order: 8">
                     <a href="#20250520231113">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_undefined);">⬤</span>
+                            <span style="color: var(--n_open_topic);">⬤</span>
                             
                         </span>
                         <span>Openstack</span>
                     </a>
                 </li>
                 
-                <li data-index="20250515004333" style="order: 6">
+                <li data-index="20250524115617" style="order: 9">
+                    <a href="#20250524115617">
+                        <span class="record-type-points">
+                            
+                            <span style="color: var(--n_open_topic);">⬤</span>
+                            
+                        </span>
+                        <span>Pareto Principle (80/20)</span>
+                    </a>
+                </li>
+                
+                <li data-index="20250515004333" style="order: 10">
                     <a href="#20250515004333">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_top_category);">⬤</span>
+                            <span style="color: var(--n_top_list);">⬤</span>
                             
                         </span>
                         <span>Physics</span>
                     </a>
                 </li>
                 
-                <li data-index="20250515004334" style="order: 7">
-                    <a href="#20250515004334">
-                        <span class="record-type-points">
-                            
-                            <span style="color: var(--n_top_category);">⬤</span>
-                            
-                        </span>
-                        <span>Programming</span>
-                    </a>
-                </li>
-                
-                <li data-index="20250515004329" style="order: 8">
+                <li data-index="20250515004329" style="order: 11">
                     <a href="#20250515004329">
                         <span class="record-type-points">
                             
-                            <span style="color: var(--n_top_category);">⬤</span>
+                            <span style="color: var(--n_top_list);">⬤</span>
                             
                         </span>
                         <span>Telecommunications</span>
@@ -224,7 +279,7 @@
                     <label>
                         <input type="checkbox" checked onchange="linksDisplayToggle(this.checked)">
                         Display links
-                        <span class="badge">8</span>
+                        <span class="badge">10</span>
                     </label>
                 </li>
                 <li>
@@ -382,7 +437,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>undefined</span>
+                    <span>center_article</span>
                 </div>
 
                 
@@ -425,7 +480,7 @@
                             <a href="#20250515004329">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_top_category);">⬤</span>
+                                    <span style="color: var(--n_top_list);">⬤</span>
                                     
                                 </span>
                                 
@@ -439,29 +494,11 @@
                             </a>
                         </li>
                         
-                        <li data-target-id="20250515004334">
-                            <a href="#20250515004334">
-                                <span class="record-type-points">
-                                    
-                                    <span style="color: var(--n_top_category);">⬤</span>
-                                    
-                                </span>
-                                
-                                <span>Programming</span>
-                                
-                                <div class="record-links-context hover">
-                                    <p><a href="#20250515000329" title="About Me" class="record-link highlight">Back to Home</a></p>
-
-                                </div>
-                                
-                            </a>
-                        </li>
-                        
                         <li data-target-id="20250515004333">
                             <a href="#20250515004333">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_top_category);">⬤</span>
+                                    <span style="color: var(--n_top_list);">⬤</span>
                                     
                                 </span>
                                 
@@ -479,7 +516,7 @@
                             <a href="#20250515004332">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_top_category);">⬤</span>
+                                    <span style="color: var(--n_top_list);">⬤</span>
                                     
                                 </span>
                                 
@@ -497,7 +534,7 @@
                             <a href="#20250515004330">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_top_category);">⬤</span>
+                                    <span style="color: var(--n_top_list);">⬤</span>
                                     
                                 </span>
                                 
@@ -515,7 +552,7 @@
                             <a href="#20250515004331">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_top_category);">⬤</span>
+                                    <span style="color: var(--n_top_list);">⬤</span>
                                     
                                 </span>
                                 
@@ -529,8 +566,311 @@
                             </a>
                         </li>
                         
+                        <li data-target-id="20250515004334">
+                            <a href="#20250515004334">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_top_list);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>IT</span>
+                                
+                                <div class="record-links-context hover">
+                                    <p><a href="#20250515000329" title="About Me" class="record-link highlight">Back to Home</a></p>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
                     </ul>
                 </details>
+                
+            </footer>
+        </article>
+        
+        <article id="20250525133847" class="record">
+            <header>
+                <h1 class="record-title">DevOps</h1>
+
+                
+
+                
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250525133847</span>
+                </div>
+                
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>sub_list</span>
+                </div>
+
+                
+
+                
+
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+                <h1>DevOps</h1>
+<p>Items:</p>
+<ul>
+<li><a href="#20250520231113" title="Openstack" class="record-link ">Openstack</a></li>
+</ul>
+
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+                <details class="record-links" open="open">
+                    <summary class="menu-title">
+                        links
+                        <span class="badge">1</span>
+                    </summary>
+
+                    <ul class="record-links-list">
+                        
+                        <li data-target-id="20250520231113">
+                            <a href="#20250520231113">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_open_topic);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>Openstack</span>
+                                
+                                <div class="record-links-context hover">
+                                    <p>Items:</p>
+<ul>
+<li><a href="#20250520231113" title="Openstack" class="record-link highlight">Openstack</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
+                
+
+                
+                <details class="record-backlinks" open="open">
+                    <summary class="menu-title">
+                        backlinks
+                        <span class="badge">1</span>
+                    </summary>
+
+                    <ul class="record-backlinks-list">
+                        
+                        <li data-target-id="20250515004334">
+                            <a href="#20250515004334">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_top_list);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>IT</span>
+                                
+                                <div class="record-links-context hover">
+                                    <p>Items:</p>
+<ul>
+<li><a href="#20250525133847" title="DevOps" class="record-link highlight">DevOps</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
+                
+            </footer>
+        </article>
+        
+        <article id="20250524115809" class="record">
+            <header>
+                <h1 class="record-title">Ishikawa Diagrams</h1>
+
+                
+
+                
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250524115809</span>
+                </div>
+                
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>open_topic</span>
+                </div>
+
+                
+
+                
+
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+                <h1>Ishikawa Diagrams</h1>
+
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+                <details class="record-backlinks" open="open">
+                    <summary class="menu-title">
+                        backlinks
+                        <span class="badge">1</span>
+                    </summary>
+
+                    <ul class="record-backlinks-list">
+                        
+                        <li data-target-id="20250515004330">
+                            <a href="#20250515004330">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_top_list);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>Management</span>
+                                
+                                <div class="record-links-context hover">
+                                    <ul>
+<li><a href="#20250524115617" title="Pareto Principle (80/20)" class="record-link ">Pareto Principle (80/20 rule)</a></li>
+<li><a href="#20250524115809" title="Ishikawa Diagrams" class="record-link highlight">Ishikawa Diagrams</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
+                
+            </footer>
+        </article>
+        
+        <article id="20250515004334" class="record">
+            <header>
+                <h1 class="record-title">IT</h1>
+
+                
+
+                
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250515004334</span>
+                </div>
+                
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>top_list</span>
+                </div>
+
+                
+
+                
+
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+                <h1>List of topics:</h1>
+<p>I am still doing some stuff in programming. Ater hours of course, but still programming non-the-less. Even did a series of lectures in C++ for embedded at the AGH University. May put this up here as well.</p>
+<p>Items:</p>
+<ul>
+<li><a href="#20250525133847" title="DevOps" class="record-link ">DevOps</a></li>
+</ul>
+<p><a href="#20250515000329" title="About Me" class="record-link ">Back to Home</a></p>
+
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+                <details class="record-links" open="open">
+                    <summary class="menu-title">
+                        links
+                        <span class="badge">2</span>
+                    </summary>
+
+                    <ul class="record-links-list">
+                        
+                        <li data-target-id="20250525133847">
+                            <a href="#20250525133847">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_sub_list);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>DevOps</span>
+                                
+                                <div class="record-links-context hover">
+                                    <p>Items:</p>
+<ul>
+<li><a href="#20250525133847" title="DevOps" class="record-link highlight">DevOps</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                        <li data-target-id="20250515000329">
+                            <a href="#20250515000329">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_center_article);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>About Me</span>
+                                
+                                <div class="record-links-context hover">
+                                    <p><a href="#20250515000329" title="About Me" class="record-link highlight">Back to Home</a></p>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
+                
+
                 
             </footer>
         </article>
@@ -550,7 +890,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>top_category</span>
+                    <span>top_list</span>
                 </div>
 
                 
@@ -586,7 +926,7 @@
                             <a href="#20250515000329">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_undefined);">⬤</span>
+                                    <span style="color: var(--n_center_article);">⬤</span>
                                     
                                 </span>
                                 
@@ -623,7 +963,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>top_category</span>
+                    <span>top_list</span>
                 </div>
 
                 
@@ -639,6 +979,11 @@
                 
                 <h1>List of topics:</h1>
 <p>Yep, I'm doing a postgraduate degree in IT Project Management, so some knowlede of this will trickle down here.</p>
+<p>List:</p>
+<ul>
+<li><a href="#20250524115617" title="Pareto Principle (80/20)" class="record-link ">Pareto Principle (80/20 rule)</a></li>
+<li><a href="#20250524115809" title="Ishikawa Diagrams" class="record-link ">Ishikawa Diagrams</a></li>
+</ul>
 <p><a href="#20250515000329" title="About Me" class="record-link ">Back to Home</a></p>
 
                 
@@ -651,16 +996,58 @@
                 <details class="record-links" open="open">
                     <summary class="menu-title">
                         links
-                        <span class="badge">1</span>
+                        <span class="badge">3</span>
                     </summary>
 
                     <ul class="record-links-list">
+                        
+                        <li data-target-id="20250524115617">
+                            <a href="#20250524115617">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_open_topic);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>Pareto Principle (80/20)</span>
+                                
+                                <div class="record-links-context hover">
+                                    <ul>
+<li><a href="#20250524115617" title="Pareto Principle (80/20)" class="record-link highlight">Pareto Principle (80/20 rule)</a></li>
+<li><a href="#20250524115809" title="Ishikawa Diagrams" class="record-link ">Ishikawa Diagrams</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                        <li data-target-id="20250524115809">
+                            <a href="#20250524115809">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_open_topic);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>Ishikawa Diagrams</span>
+                                
+                                <div class="record-links-context hover">
+                                    <ul>
+<li><a href="#20250524115617" title="Pareto Principle (80/20)" class="record-link ">Pareto Principle (80/20 rule)</a></li>
+<li><a href="#20250524115809" title="Ishikawa Diagrams" class="record-link highlight">Ishikawa Diagrams</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
                         
                         <li data-target-id="20250515000329">
                             <a href="#20250515000329">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_undefined);">⬤</span>
+                                    <span style="color: var(--n_center_article);">⬤</span>
                                     
                                 </span>
                                 
@@ -697,7 +1084,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>top_category</span>
+                    <span>top_list</span>
                 </div>
 
                 
@@ -736,7 +1123,7 @@
                             <a href="#20250515000329">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_undefined);">⬤</span>
+                                    <span style="color: var(--n_center_article);">⬤</span>
                                     
                                 </span>
                                 
@@ -754,36 +1141,6 @@
                 </details>
                 
 
-                
-                <details class="record-backlinks" open="open">
-                    <summary class="menu-title">
-                        backlinks
-                        <span class="badge">1</span>
-                    </summary>
-
-                    <ul class="record-backlinks-list">
-                        
-                        <li data-target-id="20250515004333">
-                            <a href="#20250515004333">
-                                <span class="record-type-points">
-                                    
-                                    <span style="color: var(--n_top_category);">⬤</span>
-                                    
-                                </span>
-                                
-                                <span>Physics</span>
-                                
-                                <div class="record-links-context hover">
-                                    <h1>List of topics:</h1>
-<p>Same problem as in <a href="#20250515004332" title="Mathematics" class="record-link highlight">Mathematics</a>.</p>
-
-                                </div>
-                                
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </details>
                 
             </footer>
         </article>
@@ -803,7 +1160,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>undefined</span>
+                    <span>open_topic</span>
                 </div>
 
                 
@@ -838,20 +1195,95 @@
 
                     <ul class="record-backlinks-list">
                         
-                        <li data-target-id="20250515004334">
-                            <a href="#20250515004334">
+                        <li data-target-id="20250525133847">
+                            <a href="#20250525133847">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_top_category);">⬤</span>
+                                    <span style="color: var(--n_sub_list);">⬤</span>
                                     
                                 </span>
                                 
-                                <span>Programming</span>
+                                <span>DevOps</span>
                                 
                                 <div class="record-links-context hover">
                                     <p>Items:</p>
 <ul>
 <li><a href="#20250520231113" title="Openstack" class="record-link highlight">Openstack</a></li>
+</ul>
+
+                                </div>
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </details>
+                
+            </footer>
+        </article>
+        
+        <article id="20250524115617" class="record">
+            <header>
+                <h1 class="record-title">Pareto Principle (80/20)</h1>
+
+                
+
+                
+                <div class="record-id">
+                    <span>id :</span>
+                    <span>20250524115617</span>
+                </div>
+                
+
+                <div class="record-type">
+                    <span>types :</span>
+                    <span>open_topic</span>
+                </div>
+
+                
+
+                
+
+                
+
+                
+            </header>
+
+            <main class="record-content">
+                
+                <h1>Pareto Principle (also known as the 80/20 rule)</h1>
+
+                
+
+                
+            </main>
+
+            <footer class="list-content-container">
+                
+
+                
+                <details class="record-backlinks" open="open">
+                    <summary class="menu-title">
+                        backlinks
+                        <span class="badge">1</span>
+                    </summary>
+
+                    <ul class="record-backlinks-list">
+                        
+                        <li data-target-id="20250515004330">
+                            <a href="#20250515004330">
+                                <span class="record-type-points">
+                                    
+                                    <span style="color: var(--n_top_list);">⬤</span>
+                                    
+                                </span>
+                                
+                                <span>Management</span>
+                                
+                                <div class="record-links-context hover">
+                                    <ul>
+<li><a href="#20250524115617" title="Pareto Principle (80/20)" class="record-link highlight">Pareto Principle (80/20 rule)</a></li>
+<li><a href="#20250524115809" title="Ishikawa Diagrams" class="record-link ">Ishikawa Diagrams</a></li>
 </ul>
 
                                 </div>
@@ -880,7 +1312,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>top_category</span>
+                    <span>top_list</span>
                 </div>
 
                 
@@ -895,7 +1327,7 @@
             <main class="record-content">
                 
                 <h1>List of topics:</h1>
-<p>Same problem as in <a href="#20250515004332" title="Mathematics" class="record-link ">Mathematics</a>.</p>
+<p>There may be something here some day.</p>
 <p><a href="#20250515000329" title="About Me" class="record-link ">Back to Home</a></p>
 
                 
@@ -908,134 +1340,16 @@
                 <details class="record-links" open="open">
                     <summary class="menu-title">
                         links
-                        <span class="badge">2</span>
+                        <span class="badge">1</span>
                     </summary>
 
                     <ul class="record-links-list">
-                        
-                        <li data-target-id="20250515004332">
-                            <a href="#20250515004332">
-                                <span class="record-type-points">
-                                    
-                                    <span style="color: var(--n_top_category);">⬤</span>
-                                    
-                                </span>
-                                
-                                <span>Mathematics</span>
-                                
-                                <div class="record-links-context hover">
-                                    <h1>List of topics:</h1>
-<p>Same problem as in <a href="#20250515004332" title="Mathematics" class="record-link highlight">Mathematics</a>.</p>
-
-                                </div>
-                                
-                            </a>
-                        </li>
                         
                         <li data-target-id="20250515000329">
                             <a href="#20250515000329">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_undefined);">⬤</span>
-                                    
-                                </span>
-                                
-                                <span>About Me</span>
-                                
-                                <div class="record-links-context hover">
-                                    <p><a href="#20250515000329" title="About Me" class="record-link highlight">Back to Home</a></p>
-
-                                </div>
-                                
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </details>
-                
-
-                
-            </footer>
-        </article>
-        
-        <article id="20250515004334" class="record">
-            <header>
-                <h1 class="record-title">Programming</h1>
-
-                
-
-                
-                <div class="record-id">
-                    <span>id :</span>
-                    <span>20250515004334</span>
-                </div>
-                
-
-                <div class="record-type">
-                    <span>types :</span>
-                    <span>top_category</span>
-                </div>
-
-                
-
-                
-
-                
-
-                
-            </header>
-
-            <main class="record-content">
-                
-                <h1>List of topics:</h1>
-<p>I am still doing some stuff in programming. Ater hours of course, but still programming non-the-less. Even did a series of lectures in C++ for embedded at the AGH University. May put this up here as well.</p>
-<p>Items:</p>
-<ul>
-<li><a href="#20250520231113" title="Openstack" class="record-link ">Openstack</a></li>
-</ul>
-<p><a href="#20250515000329" title="About Me" class="record-link ">Back to Home</a></p>
-
-                
-
-                
-            </main>
-
-            <footer class="list-content-container">
-                
-                <details class="record-links" open="open">
-                    <summary class="menu-title">
-                        links
-                        <span class="badge">2</span>
-                    </summary>
-
-                    <ul class="record-links-list">
-                        
-                        <li data-target-id="20250520231113">
-                            <a href="#20250520231113">
-                                <span class="record-type-points">
-                                    
-                                    <span style="color: var(--n_undefined);">⬤</span>
-                                    
-                                </span>
-                                
-                                <span>Openstack</span>
-                                
-                                <div class="record-links-context hover">
-                                    <p>Items:</p>
-<ul>
-<li><a href="#20250520231113" title="Openstack" class="record-link highlight">Openstack</a></li>
-</ul>
-
-                                </div>
-                                
-                            </a>
-                        </li>
-                        
-                        <li data-target-id="20250515000329">
-                            <a href="#20250515000329">
-                                <span class="record-type-points">
-                                    
-                                    <span style="color: var(--n_undefined);">⬤</span>
+                                    <span style="color: var(--n_center_article);">⬤</span>
                                     
                                 </span>
                                 
@@ -1072,7 +1386,7 @@
 
                 <div class="record-type">
                     <span>types :</span>
-                    <span>top_category</span>
+                    <span>top_list</span>
                 </div>
 
                 
@@ -1108,7 +1422,7 @@
                             <a href="#20250515000329">
                                 <span class="record-type-points">
                                     
-                                    <span style="color: var(--n_undefined);">⬤</span>
+                                    <span style="color: var(--n_center_article);">⬤</span>
                                     
                                 </span>
                                 
@@ -1271,12 +1585,12 @@
     
 
     <script>
-        const data = {"nodes":[{"id":"20250515004329","label":"Telecommunications","types":["top_category"],"size":4.25,"strokeWidth":2},{"id":"20250515004334","label":"Programming","types":["top_category"],"size":6.5,"strokeWidth":2},{"id":"20250515004333","label":"Physics","types":["top_category"],"size":6.5,"strokeWidth":2},{"id":"20250520231113","label":"Openstack","types":["undefined"],"size":4.25,"strokeWidth":2},{"id":"20250515004332","label":"Mathematics","types":["top_category"],"size":6.5,"strokeWidth":2},{"id":"20250515004330","label":"Management","types":["top_category"],"size":4.25,"strokeWidth":2},{"id":"20250515004331","label":"Machine Learning","types":["top_category"],"size":4.25,"strokeWidth":2},{"id":"20250515000329","label":"About Me","types":["undefined"],"size":15.5,"strokeWidth":2}],"links":[{"id":0,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004329","target":"20250515000329","report":[]},{"id":1,"context":["Items:\n- [[20250520231113|Openstack]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004334","target":"20250520231113","report":[]},{"id":2,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004334","target":"20250515000329","report":[]},{"id":3,"context":["# List of topics:\nSame problem as in [[20250515004332|Mathematics]]."],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004333","target":"20250515004332","report":[]},{"id":4,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004333","target":"20250515000329","report":[]},{"id":5,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004332","target":"20250515000329","report":[]},{"id":6,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004330","target":"20250515000329","report":[]},{"id":7,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004331","target":"20250515000329","report":[]}]};
-        const graphProperties = {"select_origin":"directory","files_origin":"./posts","nodes_origin":"","links_origin":"","nodes_online":"","links_online":"","images_origin":"","export_target":"./","history":false,"focus_max":2,"record_types":{"undefined":{"fill":"#948979","stroke":"#DFD0B8"},"top_category":{"fill":"#b41ec7","stroke":"#d369e0"}},"link_types":{"undefined":{"stroke":"simple","color":"#DFD0B8"}},"references_as_nodes":false,"references_type_label":"references","record_filters":[],"graph_background_color":"#222831","graph_highlight_color":"#393E46","graph_highlight_on_hover":true,"graph_text_size":10,"graph_arrows":true,"node_size_method":"degree","node_size":10,"node_size_max":20,"node_size_min":2,"attraction_force":600,"attraction_distance_max":800,"attraction_vertical":0,"attraction_horizontal":0,"views":{},"record_metas":[],"generate_id":"always","link_context":"tooltip","hide_id_from_record_header":false,"title":"","author":"","description":"","keywords":[],"link_symbol":"","csl":"","bibliography":"","csl_locale":"","css_custom":"","devtools":false,"lang":"en"};
+        const data = {"nodes":[{"id":"20250515000329","label":"About Me","types":["center_article"],"size":13.999999999999998,"strokeWidth":2},{"id":"20250515004329","label":"Telecommunications","types":["top_list"],"size":4,"strokeWidth":2},{"id":"20250515004333","label":"Physics","types":["top_list"],"size":4,"strokeWidth":2},{"id":"20250515004332","label":"Mathematics","types":["top_list"],"size":4,"strokeWidth":2},{"id":"20250524115617","label":"Pareto Principle (80/20)","types":["open_topic"],"size":4,"strokeWidth":2},{"id":"20250515004330","label":"Management","types":["top_list"],"size":8,"strokeWidth":2},{"id":"20250524115809","label":"Ishikawa Diagrams","types":["open_topic"],"size":4,"strokeWidth":2},{"id":"20250515004331","label":"Machine Learning","types":["top_list"],"size":4,"strokeWidth":2},{"id":"20250515004334","label":"IT","types":["top_list"],"size":6,"strokeWidth":2},{"id":"20250520231113","label":"Openstack","types":["open_topic"],"size":4,"strokeWidth":2},{"id":"20250525133847","label":"DevOps","types":["sub_list"],"size":6,"strokeWidth":2}],"links":[{"id":0,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004329","target":"20250515000329","report":[]},{"id":1,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004333","target":"20250515000329","report":[]},{"id":2,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004332","target":"20250515000329","report":[]},{"id":3,"context":["- [[20250524115617|Pareto Principle (80/20 rule)]]\n- [[20250524115809|Ishikawa Diagrams]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004330","target":"20250524115617","report":[]},{"id":4,"context":["- [[20250524115617|Pareto Principle (80/20 rule)]]\n- [[20250524115809|Ishikawa Diagrams]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004330","target":"20250524115809","report":[]},{"id":5,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004330","target":"20250515000329","report":[]},{"id":6,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004331","target":"20250515000329","report":[]},{"id":7,"context":["Items:\n- [[20250525133847|DevOps]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004334","target":"20250525133847","report":[]},{"id":8,"context":["[[20250515000329|Back to Home]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250515004334","target":"20250515000329","report":[]},{"id":9,"context":["Items:\n- [[20250520231113|Openstack]]"],"type":"undefined","shape":{"stroke":"simple","dashInterval":null},"color":"#DFD0B8","colorHighlight":"#393E46","source":"20250525133847","target":"20250520231113","report":[]}]};
+        const graphProperties = {"select_origin":"directory","files_origin":"./posts","nodes_origin":"","links_origin":"","nodes_online":"","links_online":"","images_origin":"","export_target":"./","history":false,"focus_max":2,"record_types":{"undefined":{"fill":"#948979","stroke":"#DFD0B8"},"top_list":{"fill":"#b41ec7","stroke":"#d369e0"},"sub_list":{"fill":"#171884","stroke":"#1718c8"},"center_article":{"fill":"#333333","stroke":"#777777"},"open_topic":{"fill":"#ac0608","stroke":"#ea0608"},"work_in_progress":{"fill":"#c7ab08","stroke":"#f3f630"},"closed_topic":{"fill":"#139a17","stroke":"#13db17"}},"link_types":{"undefined":{"stroke":"simple","color":"#DFD0B8"}},"references_as_nodes":false,"references_type_label":"references","record_filters":[],"graph_background_color":"#222831","graph_highlight_color":"#393E46","graph_highlight_on_hover":true,"graph_text_size":10,"graph_arrows":true,"node_size_method":"degree","node_size":10,"node_size_max":20,"node_size_min":2,"attraction_force":600,"attraction_distance_max":800,"attraction_vertical":0,"attraction_horizontal":0,"views":{},"record_metas":[],"generate_id":"always","link_context":"tooltip","hide_id_from_record_header":false,"title":"","author":"","description":"","keywords":[],"link_symbol":"","csl":"","bibliography":"","csl_locale":"","css_custom":"","devtools":false,"lang":"en"};
         const tagList = [];
-        const typeList = {"top_category":{"nodes":["20250515004329","20250515004334","20250515004333","20250515004332","20250515004330","20250515004331"],"active":true},"undefined":{"nodes":["20250520231113","20250515000329"],"active":true}};
+        const typeList = {"center_article":{"nodes":["20250515000329"],"active":true},"top_list":{"nodes":["20250515004329","20250515004333","20250515004332","20250515004330","20250515004331","20250515004334"],"active":true},"open_topic":{"nodes":["20250524115617","20250524115809","20250520231113"],"active":true},"sub_list":{"nodes":["20250525133847"],"active":true}};
         const timeline = {};
-        const sorting = {"records":[{"alphabetical":0,"chronological":0},{"alphabetical":1,"chronological":1},{"alphabetical":2,"chronological":2},{"alphabetical":3,"chronological":3},{"alphabetical":4,"chronological":4},{"alphabetical":5,"chronological":5},{"alphabetical":6,"chronological":6},{"alphabetical":7,"chronological":7}],"tags":[]};
+        const sorting = {"records":[{"alphabetical":0,"chronological":0},{"alphabetical":1,"chronological":1},{"alphabetical":2,"chronological":2},{"alphabetical":3,"chronological":3},{"alphabetical":4,"chronological":4},{"alphabetical":5,"chronological":5},{"alphabetical":6,"chronological":6},{"alphabetical":7,"chronological":7},{"alphabetical":8,"chronological":8},{"alphabetical":9,"chronological":9},{"alphabetical":10,"chronological":10}],"tags":[]};
 
         const focusIsActive = true;
 

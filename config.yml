@@ -12,9 +12,24 @@ record_types:
   undefined:
     fill: "#948979"
     stroke: "#DFD0B8"
-  top_category:
+  top_list:
     fill: "#b41ec7"
     stroke: "#d369e0"
+  sub_list:
+    fill: "#171884"
+    stroke: "#1718c8"
+  center_article:
+    fill: "#333333"
+    stroke: "#777777"
+  open_topic:
+    fill: "#ac0608"
+    stroke: "#ea0608"
+  work_in_progress:
+    fill: "#c7ab08"
+    stroke: "#f3f630"
+  closed_topic:
+    fill: "#139a17"
+    stroke: "#13db17"
 link_types:
   undefined:
     stroke: simple

@@ -2,7 +2,7 @@
 title: About Me
 id: "20250515000329"
 types:
-  - undefined
+  - center_article
 ---
 
 # Hi everyone

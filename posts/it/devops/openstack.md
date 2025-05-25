@@ -2,7 +2,7 @@
 title: Openstack
 id: "20250520231113"
 types:
-  - undefined
+  - open_topic
 ---
 
 # OpenStack
