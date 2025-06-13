@@ -7,4 +7,3 @@ types:
 
 # List of topics:
 
-[[20250515000329|Back to Home]]

@@ -12,4 +12,3 @@ If you see this as a formula, I succeded:
 
 $$ y^2 + x^2 = z^2 $$
 
-[[20250515000329|Back to Home]]

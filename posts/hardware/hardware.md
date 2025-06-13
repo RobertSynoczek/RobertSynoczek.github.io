@@ -13,4 +13,4 @@ Items:
 - [[20250527225826|Verification]]
 - [[20250527230555|Hardware Acceleration of Machine Learning Algorithms]]
 
-[[20250515000329|Back to Home]]
+

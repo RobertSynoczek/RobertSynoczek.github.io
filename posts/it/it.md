@@ -11,4 +11,3 @@ I am still doing some stuff in programming. Ater hours of course, but still prog
 Items:
 - [[20250525133847|DevOps]]
 
-[[20250515000329|Back to Home]]

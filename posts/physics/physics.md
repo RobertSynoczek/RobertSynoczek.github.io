@@ -8,4 +8,3 @@ types:
 # List of topics:
 There may be something here some day.
 
-[[20250515000329|Back to Home]]
